@@ -1,0 +1,7 @@
+{
+    "watch": ["server"],
+    "ext": "js",
+    "exec": "npm run babel-node .",
+    "verbose": true,
+    "ignore": ["*.test.js"]
+}

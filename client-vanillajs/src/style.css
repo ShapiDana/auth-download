@@ -1,0 +1,35 @@
+header {
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 20px;
+}
+
+input {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+header {
+    display: block;
+    background: #2cd7f5;
+    font-size: 20px;
+    color: #000c1a;
+}
+header h1 {
+    margin: 3% 30%;
+}
+
+.stepper_button {
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    margin: 2% 1%;
+    padding: 8px 16px;
+}
+  
+.stepper_button:hover {
+    background-color: #56e6ff; /* azure */
+    color: white;
+}

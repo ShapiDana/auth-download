@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="same-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="js/controller.js"></script>
+    
+    <title>Authorized Download</title>
+</head>
+<body>
+    <header class="clearfix">
+        <div class='width'>
+          <h1 class='left'>Authorized Download</h1>
+        </div>
+      </header>
+    <div class="container">
+        <div class="stepper">
+            <div class="register">
+                <form id="form-register" action="http://localhost:8000/register" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <input type="submit" name="send" value="Register Name">
+                    <br/>
+                    <div class="password" style="display: none;">
+                        <label id="register-password"></label>
+                        <input id="register-password__copy" type="button" value="copy">
+                    </div>
+                </form>
+            </div>
+            <div class="download" style="display: none;">
+                <form id="form-download" action="http://localhost:8080/download" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <br/>
+                    <br/>
+                    <label for="password">Password</label>
+                    <input type="text" name="password">
+                </form>
+            </div>
+            <div class="downloaded-image" style="display: none;">
+                
+            </div>
+            <div class="stepper_buttons">
+                <button disabled class="stepper_button" id="btnPrev" type="button">Previous</button>
+                <button disabled class="stepper_button" id="btnNext" type="button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
